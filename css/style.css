@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+header {
+    padding: 15px;
+    box-shadow: 0px 0px 15px #0000002e;
+}
+.v_center{
+    align-items: center;
+}
+.container{
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    font-size: 22px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo a {
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #222;
+}
+nav{
+    flex-basis: 80%;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+nav ul li{}
+nav ul li a {
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #222;
+    display: inline-block;
+    border-bottom: 2px solid #22222200;
+    transition: border 0.4s linear;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #222;
+}
+.herobanner{
+    background: #222 url(../photo/22.png);
+    background-repeat: no-repeat;
+    min-height: 89vh;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+.column-1-2{
+    flex-basis: 50%;
+}
+.herobanner img{
+    width: 90%;
+}
+.herobanner h1{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.2;
+    text-align: center;
+}
+.herobanner h1 b{
+    font-size: 55px;
+    font-weight: 900;
+    display: block;
+}
+.herobanner p {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.counter{
+    font-size: 18px;
+    font-weight: 400;
+}
+.counter div {
+    flex-basis: 33.33%;
+    text-align: center;
+
+}
+.herobanner .counter div{
+    border-right: 1px solid #ffffff8a;
+}
+.herobanner .counter div:last-child{
+    border-right: 0px solid #fff;
+}
+.herobanner .counter h2{
+    color: #fff;
+}
+.herobanner .counter span{
+    color: #fff;
+}
+.features{
+    padding: 100px 0;
+}
+
+.features .counter div{
+    border-right: 1px solid #6363638a;
+}
+.features .counter div:last-child{
+    border-right: 0px solid black;
+}
+.features .counter h2{
+    color: #222;
+}
+.features .counter span{
+    color: #222;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button a{
+    background-color: #031321;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2196f3;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 3s;
+    position: relative;
+}
+.button a:hover{
+    color: #000000;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #002196f3, 0 0 40px #002196f3, 0 0 80px #002196f3;
+    transition-delay: .1s;
+}
+.button a span {
+    position: absolute;
+    display: block;
+}
+.button a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.button a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.button a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.button a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.yellow{
+    background-image: url(../photo/yellow.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blue{
+    background-image: url(../photo/green.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.green{
+    background-image: url(../photo/red.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.reds{
+    background-image: url(../photo/blue.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.purpel{
+    background-image: url(../photo/purpel.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sea{
+    background-image: url(../photo/sea.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.col{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.col h2{
+    background-color: #fff;
+    padding: 10px 30px;
+    font-weight: 800;
+}
+.col a{
+    margin-bottom: 70px;
+    background-color: #222;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #fff;
+}
